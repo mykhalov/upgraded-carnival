@@ -1,14 +1,18 @@
 import { connect } from 'react-redux'
-import { updateUsers } from '../actions/users'
+import { fetchAndUpdateUsers } from '../actions/users'
+import { updateCurrentUser } from '../actions/currentUser'
 import Search from './Search'
 
-const actionCreators = {
-  onSubmit: updateUsers,
-}
+const mapDispatchToProps = dispatch => ({
+  onSubmit: async username => {
+    await dispatch(fetchAndUpdateUsers(username))
+    dispatch(updateCurrentUser(username))
+  },
+})
 
 const SearchConnect = connect(
   null,
-  actionCreators,
+  mapDispatchToProps,
 )(Search)
 
 export default SearchConnect
