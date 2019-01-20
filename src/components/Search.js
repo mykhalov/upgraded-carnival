@@ -9,8 +9,10 @@ const onSubmit = propsOnSubmit => event => {
 
 const Search = ({ onSubmit: propsOnSubmit }) => (
   <form onSubmit={onSubmit(propsOnSubmit)}>
-    <input type="search" name="username" defaultValue="growtofill" required />
-    <button type="submit">Search</button>
+    <input name="username" defaultValue="growtofill" required className="input" />
+    <button type="submit" className="button">
+      Search
+    </button>
   </form>
 )
 

@@ -6,13 +6,21 @@ import UserCard from './UserCardConnect'
 import ReposList from './ReposListConnect'
 import RepoCard from './RepoCardConnect'
 
+import './App.css'
+
 const App = () => (
-  <Provider store={store}>
-    <Search />
-    <UserCard />
-    <ReposList />
-    <RepoCard />
-  </Provider>
+  <div className="row">
+    <Provider store={store}>
+      <div className="col">
+        <Search />
+        <UserCard />
+        <ReposList />
+      </div>
+      <div className="col">
+        <RepoCard />
+      </div>
+    </Provider>
+  </div>
 )
 
 export default App

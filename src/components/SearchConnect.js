@@ -1,11 +1,14 @@
 import { connect } from 'react-redux'
 import { fetchAndUpdateUsers } from '../thunks/users'
 import { fetchAndUpdateRepos } from '../thunks/repos'
-import { updateCurrentUser } from '../actions'
+import { updateCurrentUser, updateCurrentRepo } from '../actions'
 import Search from './Search'
 
 const mapDispatchToProps = dispatch => ({
   onSubmit: async username => {
+    dispatch(updateCurrentUser(''))
+    dispatch(updateCurrentRepo(''))
+
     await Promise.all([
       dispatch(fetchAndUpdateUsers(username)),
       dispatch(fetchAndUpdateRepos(username)),

@@ -2,11 +2,13 @@ import React from 'react'
 
 const UserCard = ({ user }) =>
   user ? (
-    <div>
-      <div>{user.name}</div>
+    <p>
+      <div>
+        <strong>{user.name}</strong>
+      </div>
       <div>{user.location}</div>
       <div>{user.followers} follower(s)</div>
-    </div>
+    </p>
   ) : null
 
 export default UserCard

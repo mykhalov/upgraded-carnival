@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 1;
+}
+
+.input {
+  padding: 6px 8px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: solid 1px rgb(209, 213, 218);
+}
+
+.button {
+  margin-left: 8px;
+  padding: 6px 8px;
+  font-size: 15px;
+  border-radius: 3px;
+  background: rgb(3, 102, 214);
+  color: white;
+  border: none;
+}
+
+.card {
+  padding: 0 16px;
+  border-radius: 3px;
+  border: solid 1px rgb(209, 213, 218);
+}
+
+.selected {
+  color: rgb(3, 102, 214);
+}
