@@ -1,5 +1,5 @@
 import users from './users'
-import { updateUsers } from '../actions/users'
+import { updateUsers } from '../actions'
 
 describe('users reducer', () => {
   test('returns default state', () => {

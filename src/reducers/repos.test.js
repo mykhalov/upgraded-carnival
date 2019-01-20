@@ -1,5 +1,5 @@
 import repos from './repos'
-import { updateRepos } from '../actions/repos'
+import { updateRepos } from '../actions'
 
 describe('users reducer', () => {
   test('returns default state', () => {

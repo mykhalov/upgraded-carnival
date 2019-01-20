@@ -5,6 +5,7 @@ const mapStateToProps = state => ({
   repo: state.repos[state.currentRepo],
 })
 
-const RepoCardConnect = connect(mapStateToProps)(RepoCard)
+const RepoCardConnect = connect(mapStateToProps)
 
-export default RepoCardConnect
+export default RepoCardConnect(RepoCard)
+export { RepoCardConnect }

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
-import { fetchAndUpdateUsers } from '../actions/users'
-import { fetchAndUpdateRepos } from '../actions/repos'
-import { updateCurrentUser } from '../actions/currentUser'
+import { fetchAndUpdateUsers } from '../thunks/users'
+import { fetchAndUpdateRepos } from '../thunks/repos'
+import { updateCurrentUser } from '../actions'
 import Search from './Search'
 
 const mapDispatchToProps = dispatch => ({

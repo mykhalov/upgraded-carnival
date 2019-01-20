@@ -1,5 +1,5 @@
 import currentRepo from './currentRepo'
-import { updateCurrentRepo } from '../actions/currentRepo'
+import { updateCurrentRepo } from '../actions'
 
 describe('currentRepo reducer', () => {
   test('returns default state', () => {

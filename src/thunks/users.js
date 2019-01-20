@@ -1,7 +1,5 @@
-import { createAction } from 'redux-starter-kit'
 import { users } from '../apis/github'
-
-const updateUsers = createAction('users/update')
+import { updateUsers } from '../actions'
 
 const fetchAndUpdateUsers = username => async dispatch => {
   const payload = await users(username)

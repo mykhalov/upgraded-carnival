@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { updateCurrentRepo } from '../actions/currentRepo'
+import { updateCurrentRepo } from '../actions'
 import ReposList from './ReposList'
 
 const mapStateToProps = state => ({
@@ -13,9 +13,10 @@ const actionCreators = {
   onSelect: updateCurrentRepo,
 }
 
-const RepoListConnect = connect(
+const ReposListConnect = connect(
   mapStateToProps,
   actionCreators,
-)(ReposList)
+)
 
-export default RepoListConnect
+export default ReposListConnect(ReposList)
+export { ReposListConnect }

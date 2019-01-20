@@ -1,5 +1,5 @@
 import { createReducer } from 'redux-starter-kit'
-import { updateRepos } from '../actions/repos'
+import { updateRepos } from '../actions'
 
 const indexBy = key => (acc, item) => ({
   ...acc,

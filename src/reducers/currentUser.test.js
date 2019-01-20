@@ -1,5 +1,5 @@
 import currentUser from './currentUser'
-import { updateCurrentUser } from '../actions/currentUser'
+import { updateCurrentUser } from '../actions'
 
 describe('currentUser reducer', () => {
   test('returns default state', () => {
