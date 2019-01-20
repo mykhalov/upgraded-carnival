@@ -4,7 +4,7 @@ const ReposList = ({ repos, onSelect, currentRepo }) => (
   <ul>
     {repos &&
       repos.map(repo => (
-        <li key={repo.full_name}>
+        <li key={repo.full_name} className={repo.full_name === currentRepo ? 'selected' : ''}>
           {repo.name}{' '}
           <button
             onClick={() => onSelect(repo.full_name)}
