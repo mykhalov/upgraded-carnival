@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import Search from './Search'
 
 describe('Search component', () => {
-  test('should call onSubmit', () => {
+  test('calls onSubmit', () => {
     const onSubmit = jest.fn()
     const wrapper = shallow(<Search onSubmit={onSubmit} />)
     const event = {
