@@ -5,7 +5,7 @@ const UserCard = ({ user }) =>
     <div>
       <div>{user.name}</div>
       <div>{user.location}</div>
-      <div>{user.followers}</div>
+      <div>{user.followers} follower(s)</div>
     </div>
   ) : null
 

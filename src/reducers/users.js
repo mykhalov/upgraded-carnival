@@ -9,7 +9,8 @@ const indexBy = key => (acc, item) => ({
 const users = createReducer(
   {},
   {
-    [updateUsers]: (state, action) => action.payload.reduce(indexBy('login'), state),
+    [updateUsers]: (state, action) =>
+      action.payload.reduce(indexBy('login'), state),
   },
 )
 

@@ -1,8 +1,8 @@
 import { createReducer } from 'redux-starter-kit'
 import { updateCurrentUser } from '../actions/currentUser'
 
-const users = createReducer('', {
+const currentUser = createReducer('', {
   [updateCurrentUser]: (state, action) => action.payload,
 })
 
-export default users
+export default currentUser
