@@ -5,7 +5,7 @@ const updateUsers = createAction('users/update')
 
 const fetchAndUpdateUsers = username => async dispatch => {
   const payload = await users(username)
-  dispatch(updateUsers(payload))
+  dispatch(updateUsers([payload]))
 }
 
 export { updateUsers, fetchAndUpdateUsers }

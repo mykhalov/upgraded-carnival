@@ -1,10 +1,15 @@
 import { createReducer } from 'redux-starter-kit'
 import { updateUsers } from '../actions/users'
 
+const indexBy = key => (acc, item) => ({
+  ...acc,
+  [item[key]]: item,
+})
+
 const users = createReducer(
   {},
   {
-    [updateUsers]: (state, action) => ({ ...state, [action.payload.login]: action.payload }),
+    [updateUsers]: (state, action) => action.payload.reduce(indexBy('login'), state),
   },
 )
 
