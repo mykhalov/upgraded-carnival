@@ -58,13 +58,6 @@ describe('ReposListConnect component', () => {
   })
 
   test('provides currentRepo', () => {
-    const spoonKnife = {
-      full_name: 'octocat/Spoon-Knife',
-      owner: {
-        login: 'octocat',
-      },
-    }
-
     state.repos = {}
     state.currentUser = 'octocat'
     state.currentRepo = 'octocat/Spoon-Knife'

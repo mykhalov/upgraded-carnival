@@ -5,6 +5,7 @@ const mapStateToProps = state => ({
   user: state.users[state.currentUser],
 })
 
-const UserCardConnect = connect(mapStateToProps)(UserCard)
+const UserCardConnect = connect(mapStateToProps)
 
-export default UserCardConnect
+export default UserCardConnect(UserCard)
+export { UserCardConnect }

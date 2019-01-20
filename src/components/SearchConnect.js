@@ -18,6 +18,7 @@ const mapDispatchToProps = dispatch => ({
 const SearchConnect = connect(
   null,
   mapDispatchToProps,
-)(Search)
+)
 
-export default SearchConnect
+export default SearchConnect(Search)
+export { SearchConnect }
